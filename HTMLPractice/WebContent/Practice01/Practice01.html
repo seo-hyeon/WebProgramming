@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>컴퓨터학과 2학년 시간표</title>
+
+<style>
+	table {
+		border-collapse: collapse;
+		border:solid 1px;
+	}
+	
+	td {
+		width: 85px;
+		height: 50px;
+		border:solid 1px;
+	}
+	
+	#col1 {
+		text-align: center;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	
+	#col2 {
+		text-align: center;
+		font-size: 13px;
+	}
+	
+	#y {
+		background-color: #ffe08c	
+	}
+	
+	#b {
+		background-color: #b2ccff
+	}
+	
+	#g {
+		background-color: #bdbdbd
+	}
+</style>
+</head>
+<body>
+	<div align="center">
+		<h3>강의시간표</h3>
+		 
+		<table border="1">
+			<tr id = "col1"> 
+				<td> 2학년 </td>
+				<td> 월 </td>
+				<td> 화 </td>
+				<td> 수 </td>
+				<td> 목 </td>
+				<td> 금 </td>
+			</tr>
+			
+			<tr id = "col2">
+				<td id = "col1"> 1 </td>
+				<td>  </td>
+				<td rowspan="2" id = "y"> 자료구조 </td>
+				<td id = "y"> 네트워크 </td>
+				<td>  </td>
+				<td id = "y"> 네트워크 </td>
+			</tr>
+			
+			<tr id = "col2">
+				<td id = "col1"> 2 </td>
+				<td rowspan="2" id = "y"> 데이터베이스개론 </td>
+				<td>  </td>
+				<td>  </td>
+				<td id = "b"> 운영체제 </td>
+			</tr>
+			
+			<tr id = "col2">
+				<td id = "col1"> 3 </td>
+				<td>  </td>
+				<td id = "b"> 운영체제 </td>
+				<td>  </td>
+				<td rowspan="4"> 사회봉사 </td>
+			</tr>
+			
+			<tr id = "col2">
+				<td id = "col1"> 4 </td>
+				<td rowspan="2" id = "b"> 웹프로그래밍 </td>
+				<td id = "g"> 창의와 감성 </td>
+				<td>  </td>
+				<td id = "g"> 창의와 감성 </td>
+			</tr>
+			
+			<tr id = "col2">
+				<td id = "col1"> 5 </td>
+				<td>  </td>
+				<td>  </td>
+				<td rowspan="2" id = "b"> 소프트웨어프로그래밍 </td>
+			</tr>
+			
+			<tr id = "col2">
+				<td id = "col1"> 6 </td>
+				<td>  </td>
+				<td>  </td>
+				<td>  </td>
+			</tr>
+		
+		</table>
+	</div>
+</body>
+</html>
