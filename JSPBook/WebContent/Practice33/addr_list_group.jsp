@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<input type="image" src="image/alice.jpg" width=400 height = 500>
+
 </body>
 </html>

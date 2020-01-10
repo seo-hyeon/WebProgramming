@@ -7,19 +7,28 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form name="frm1" action="checker.jsp">
-아이디: <input type="text" name="name"> <br><br>
-패스워드: <input type="text" name="pw"> <br><br>
+<%
+ Object name = session.getAttribute("name");
 
-<input type="button" value="로그인">
-<input type="hidden" name="action" value="login">
-</form>
+if (name == null)
+{
+	out.println("<form name=\"frm1\" action=\"checker.jsp\">");
+	out.println("아이디: <input type=\"text\" name=\"name\"> <br><br>");
+	out.println("패스워드: <input type=\"text\" name=\"pw\"> <br><br>");
+	out.println("<input type=\"button\" value=\"로그인\">");
+	out.println("<input type=\"hidden\" name=\"action\" value=\"login\">");
+	out.println("</form>");
+}
+else
+{
+	out.println("<form name=\"frm2\" action=\"checker.jsp\">");
+	out.println(name);
+	out.println("님 환영합니다.");
+	out.println("<input type=\"button\" value=\"로그아웃\">");
+	out.println("<input type=\"hidden\" name=\"action\" value=\"logout\">");
+	out.println("</form>");
+}
+%>
 
-<form name="frm2" action="check.jsp">
-<%= session.getAttribute("name") %>님 환영합니다.
-<br><br>
-<input type="button" value="로그아웃">
-<input type="hidden" name="action" value="logout">
-</form>
 </body>
 </html>

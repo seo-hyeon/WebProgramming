@@ -8,6 +8,7 @@
 </head>
 <body>
 <%
+	out.println("<form name=\"frm1\" action=\"login.jsp\">");
 	String result = request.getParameter("action");
 
 	if (result.equals("login"))
@@ -24,6 +25,7 @@
 	{
 		
 	}
+	out.println("</form>");
 %>
 </body>
 </html>
